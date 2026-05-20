@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sameer Mallik — CS student at Northeastern University" />
+    <title>Sameer Mallik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <canvas id="meshCanvas"></canvas>
+
+    <!-- Mobile nav (only visible on small screens) -->
+    <nav class="mobile-nav" id="mobileNav">
+      <span class="nav-brand">SM</span>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="mobile-nav-links" id="mobileNavLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+
+    <div class="layout">
+
+      <!-- Left panel — sticky -->
+      <aside class="left-panel">
+        <div class="left-top">
+          <h1 class="left-name">Sameer Mallik</h1>
+          <p class="left-title">Computer Science Student</p>
+          <p class="left-sub">Interested in cybersecurity and AI. Seeking co-op or internship opportunities, July-December 2026.</p>
+        </div>
+
+        <nav class="left-nav" aria-label="Page sections">
+          <a href="#about"     class="left-nav-item" data-section="about">About</a>
+          <a href="#projects"  class="left-nav-item" data-section="projects">Projects</a>
+          <a href="#skills"    class="left-nav-item" data-section="skills">Skills</a>
+          <a href="#education" class="left-nav-item" data-section="education">Education</a>
+          <a href="#contact"   class="left-nav-item" data-section="contact">Contact</a>
+        </nav>
+
+        <div class="left-bottom">
+          <div class="left-socials">
+            <a href="https://github.com/smallik1029" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/sameer-mallik-a802b8295/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="mailto:mallik.s@northeastern.edu" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right panel — scrolls -->
+      <main class="right-panel">
+
+        <!-- About -->
+        <section class="r-section" id="about">
+          <p class="section-label">About</p>
+          <div class="about-content">
+            <p>I'm a Computer Science student at Northeastern University (Class of 2028) with a strong interest in the intersection between artificial intelligence and cybersecurity. I'm particularly drawn to building data-driven applications that have real-world use and solve problems faced by regular people.</p>
+            <p>I'm currently seeking an internship or co-op for the second half of 2026 (July-December). I've worked with various different languages and tools, from using Python and several libraries to HTML and CSS (and more) to create a beautiful and interactive website to help users analyze specific stocks, and I always welcome opportunities to grow.</p>
+            <p>Outside the realm of computer science, I follow Formula 1 and Chicago sports closely (mainly the NFL and MLB teams), build and tinker with mechanical keyboards, and cook. You can also find me rowing, playing tennis, and hanging out with my dogs.</p>
+          </div>
+          <a href="resume.html" class="section-link">View Full Resume →</a>
+        </section>
+
+        <!-- Projects -->
+        <section class="r-section" id="projects">
+          <p class="section-label">Projects</p>
+          <div class="projects-grid">
+
+            <a class="project-card" href="https://github.com/smallik1029/ds3000-project" target="_blank" rel="noopener">
+              <div class="project-card-header">
+                <h3>NFL Quarterback Regression Model</h3>
+                <span class="project-link">GitHub →</span>
+              </div>
+              <p class="project-desc">Logistic regression classifier built from scratch in NumPy to predict NFL regular-season outcomes using quarterback data spanning 80+ years. Achieved ~99% classification accuracy.</p>
+              <ul class="project-bullets">
+                <li>Implemented gradient descent, sigmoid activation, and cross-entropy loss from scratch</li>
+                <li>Engineered features from 1940s-2024 quarterback data using Pandas</li>
+                <li>Led a 3-person team through data collection, modeling, and code review</li>
+                <li>Built interactive visualizations with Matplotlib, Seaborn, and Plotly</li>
+              </ul>
+              <div class="tech-tags">
+                <span>Python</span>
+                <span>NumPy</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+                <span>Plotly</span>
+              </div>
+            </a>
+
+            <a class="project-card" href="https://vsnanalysis.com" target="_blank" rel="noopener">
+              <div class="project-card-header">
+                <h3>VSN — Stock Analysis Platform</h3>
+                <span class="project-link">Live →</span>
+              </div>
+              <p class="project-desc">Web-based platform for analyzing financial time-series data, computing key performance metrics, and enabling interactive data exploration for investment decisions.</p>
+              <ul class="project-bullets">
+                <li>Built dynamic data pipelines to retrieve, filter, and analyze stock market data</li>
+                <li>Implemented data processing logic to compute key asset performance metrics</li>
+                <li>Integrated interactive frontend components for data exploration</li>
+              </ul>
+              <div class="tech-tags">
+                <span>JavaScript</span>
+                <span>HTML/CSS</span>
+                <span>Python</span>
+              </div>
+            </a>
+
+          </div>
+          <a href="archive.html" class="section-link">View All Projects →</a>
+        </section>
+
+        <!-- Skills -->
+        <section class="r-section" id="skills">
+          <p class="section-label">Skills</p>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3>Languages</h3>
+              <div class="skill-tags">
+                <span>Python</span>
+                <span>Java</span>
+                <span>JavaScript</span>
+                <span>C++</span>
+                <span>SQL</span>
+                <span>HTML/CSS</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3>Frameworks & Libraries</h3>
+              <div class="skill-tags">
+                <span>React</span>
+                <span>NumPy</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+                <span>Plotly</span>
+                <span>Seaborn</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3>Tools</h3>
+              <div class="skill-tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+                <span>IntelliJ</span>
+                <span>Jupyter</span>
+                <span>Linux</span>
+                <span>MacOS</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section class="r-section" id="education">
+          <p class="section-label">Education</p>
+          <div class="edu-card">
+            <div class="edu-card-header">
+              <div>
+                <h3>Northeastern University</h3>
+                <p class="edu-degree">Bachelor of Science in Computer Science</p>
+                <p class="edu-location">Boston, MA</p>
+              </div>
+              <div class="edu-right">
+                <span class="edu-date">Expected May 2028</span>
+                <span class="edu-gpa">3.45 GPA | Dean's List</span>
+              </div>
+            </div>
+            <div>
+              <p class="courses-label">Relevant Coursework</p>
+              <div class="skill-tags">
+                <span>Object Oriented Design</span>
+                <span>Artificial Intelligence</span>
+                <span>Theory of Computation</span>
+                <span>Computer Systems</span>
+                <span>Algorithms & Data</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="r-section" id="contact">
+          <p class="section-label">Contact</p>
+          <p class="contact-desc">
+            I'm actively looking for any co-op, internship, or contract opportunities. Whether you have an opportunity, a question, or just want to connect, feel free to reach out.
+          </p>
+          <div class="contact-links">
+            <div class="contact-group">
+              <a href="mailto:mallik.s@northeastern.edu" class="contact-item">mallik.s@northeastern.edu</a>
+              <a href="mailto:main.smallik@gmail.com" class="contact-item">main.smallik@gmail.com</a>
+            </div>
+            <div class="contact-group">
+              <a href="https://github.com/smallik1029" target="_blank" rel="noopener" class="contact-item">github.com/smallik1029</a>
+              <a href="https://linkedin.com/in/sameer-mallik-a802b8295/" target="_blank" rel="noopener" class="contact-item">linkedin.com/in/sameer-mallik-a802b8295/</a>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <p>Created by Sameer Mallik · 2026</p>
+        </footer>
+
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

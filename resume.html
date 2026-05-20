@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume — Sameer Mallik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .resume-page {
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+        max-width: 1120px;
+        margin: 0 auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.05rem
+      }
+
+      .resume-top {
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+
+      .resume-top h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+
+      .resume-top .contact-line {
+        font-size: 1rem;
+        color: var(--muted);
+        margin-top: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.4rem 0.75rem;
+      }
+
+      .resume-top .contact-line a {
+        color: var(--accent);
+        transition: opacity 0.2s;
+      }
+
+      .resume-top .contact-line a:hover {
+        opacity: 0.75;
+      }
+
+      .resume-download-btn {
+        display: inline-block;
+        margin-top: 1.25rem;
+        padding: 0.5rem 1.2rem;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        font-size: 0.9rem;
+        color: var(--muted);
+        transition: border-color 0.2s, color 0.2s;
+      }
+
+      .resume-download-btn:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+
+      /* sections */
+      .r-section {
+        margin-bottom: 2.5rem;
+      }
+
+      .r-section:last-child {
+        margin-bottom: 0;
+      }
+
+      .r-section-title {
+        font-size: 0.82rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      /* entry rows */
+      .r-entry {
+        margin-bottom: 1.5rem;
+      }
+
+      .r-entry-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .r-entry-title {
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+
+      .r-entry-date {
+        font-size: 0.95rem;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      .r-entry-sub {
+        font-size: 1rem;
+        color: var(--muted);
+        margin-top: 0.2rem;
+      }
+
+      .r-entry-sub a {
+        color: var(--accent);
+      }
+
+      .r-entry ul {
+        margin-top: 0.5rem;
+        padding-left: 1.1rem;
+        list-style: disc;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+
+      .r-entry ul li {
+        font-size: 1rem;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      /* tech tags inline */
+      .r-tech {
+        font-size: 0.95rem;
+        color: #9ca3af;
+        font-weight: 400;
+      }
+
+      /* skills grid */
+      .skills-rows {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+
+      .skills-row {
+        display: flex;
+        gap: 0.75rem;
+        font-size: 1rem;
+      }
+
+      .skills-row .s-label {
+        color: var(--muted);
+        min-width: 110px;
+        font-weight: 500;
+      }
+
+      .skills-row .s-values {
+        color: var(--text);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="resume-page">
+      <a href="index.html" class="archive-back">← Back to Main Page</a>
+
+      <div class="resume-top">
+        <h1>Sameer Mallik</h1>
+        <div class="contact-line">
+          <span style="color: var(--accent)">Boston, MA</span>
+          <span>·</span>
+          <a href="mailto:main.smallik@gmail.com">Email</a>
+          <span>·</span>
+          <a href="https://github.com/smallik1029" target="_blank" rel="noopener">GitHub</a>
+          <span>·</span>
+          <a href="https://linkedin.com/in/sameer-mallik-a802b8295/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <a href="assets/resume.pdf" download="Sameer_Mallik_Resume.pdf" class="resume-download-btn">
+          Download PDF
+        </a>
+      </div>
+
+      <!-- Education -->
+      <div class="r-section">
+        <p class="r-section-title">Education</p>
+        <div class="r-entry">
+          <div class="r-entry-header">
+            <span class="r-entry-title">Northeastern University</span>
+            <span class="r-entry-date">Expected May 2028</span>
+          </div>
+          <p class="r-entry-sub">Bachelor of Science in Computer Science · Boston, MA</p>
+          <p class="r-entry-sub" style="margin-top: 0.35rem;">3.45 GPA · Dean's List</p>
+          <p class="r-entry-sub" style="margin-top: 0.35rem;">
+            Relevant Coursework: Object Oriented Design, Artificial Intelligence,
+            Theory of Computation, Computer Systems, Algorithms &amp; Data
+          </p>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="r-section">
+        <p class="r-section-title">Projects</p>
+
+        <div class="r-entry">
+          <div class="r-entry-header">
+            <span class="r-entry-title">
+              NFL Quarterback Regression Model &amp; Data Visualization
+              <span class="r-tech">| Python, NumPy, Pandas, Matplotlib, Seaborn, Plotly</span>
+            </span>
+            <span class="r-entry-date">Oct – Dec 2025</span>
+          </div>
+          <p class="r-entry-sub">
+            <a href="https://github.com/smallik1029/ds3000-project" target="_blank" rel="noopener">GitHub</a>
+          </p>
+          <ul>
+            <li>Collected, cleaned, and structured NFL quarterback data (1940s-2024) using Pandas</li>
+            <li>Implemented a logistic regression classifier from scratch in NumPy (gradient descent, sigmoid, cross-entropy loss), achieving ~99% classification accuracy on regular-season outcomes</li>
+            <li>Led data collection and modeling in a 3-person team; coordinated development through code review</li>
+            <li>Built 2D and interactive visualizations (Matplotlib, Seaborn, Plotly) to analyze long-term performance trends</li>
+          </ul>
+        </div>
+
+        <div class="r-entry">
+          <div class="r-entry-header">
+            <span class="r-entry-title">
+              Web-Based Stock Analysis Platform
+              <span class="r-tech">| HTML, CSS, JavaScript, Python</span>
+            </span>
+            <span class="r-entry-date">Sep – Dec 2025</span>
+          </div>
+          <p class="r-entry-sub">
+            <a href="https://vsnanalysis.com" target="_blank" rel="noopener">vsnanalysis.com</a>
+          </p>
+          <ul>
+            <li>Designed and developed a platform to analyze financial time-series data and support data-driven decision making</li>
+            <li>Built dynamic queries and data pipelines to retrieve, filter, and analyze stock market data</li>
+            <li>Integrated interactive frontend components to present analysis results and enable data exploration</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="r-section">
+        <p class="r-section-title">Experience</p>
+
+        <div class="r-entry">
+          <div class="r-entry-header">
+            <span class="r-entry-title">FoodAffair Bistro — Busser &amp; Host</span>
+            <span class="r-entry-date">Jun 2021 - Jan 2023</span>
+          </div>
+          <p class="r-entry-sub">Bettendorf, IA</p>
+          <ul>
+            <li>Supported front-of-house operations in a fast-paced restaurant environment</li>
+            <li>Coordinated with staff to manage customer needs and improve operational efficiency</li>
+          </ul>
+        </div>
+
+        <div class="r-entry">
+          <div class="r-entry-header">
+            <span class="r-entry-title">YMCA Quad Cities &amp; Rivermont Collegiate Rowing</span>
+            <span class="r-entry-date">Sep 2016 - Jun 2024</span>
+          </div>
+          <p class="r-entry-sub">Quad Cities, IA/IL · Competitive Rowing (Scull)</p>
+          <ul>
+            <li>Trained multiple days per week through structured practices and competitive regattas</li>
+            <li>Contributed to multiple top-three finishes at regional regattas while balancing academic responsibilities</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="r-section">
+        <p class="r-section-title">Skills</p>
+        <div class="skills-rows">
+          <div class="skills-row">
+            <span class="s-label">Languages</span>
+            <span class="s-values">Java, JavaScript, Python, C++, HTML/CSS, SQL</span>
+          </div>
+          <div class="skills-row">
+            <span class="s-label">Frameworks</span>
+            <span class="s-values">React, NumPy, Pandas, Matplotlib, Plotly, Seaborn</span>
+          </div>
+          <div class="skills-row">
+            <span class="s-label">Tools</span>
+            <span class="s-values">Git, GitHub, VS Code, IntelliJ IDEA, Jupyter Notebook, Excel</span>
+          </div>
+          <div class="skills-row">
+            <span class="s-label">Systems</span>
+            <span class="s-values">Windows, Linux</span>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Archive — Sameer Mallik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .archive-page {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 4rem 2rem 6rem;
+      }
+
+      .archive-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.875rem;
+        color: var(--muted);
+        transition: color 0.2s;
+        margin-bottom: 3rem;
+      }
+
+      .archive-back:hover { color: var(--accent); }
+
+      .archive-header {
+        margin-bottom: 3rem;
+      }
+
+      .archive-header h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: var(--text);
+      }
+
+      .archive-header p {
+        font-size: 0.95rem;
+        color: var(--muted);
+        margin-top: 0.5rem;
+      }
+
+      .archive-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .archive-table thead th {
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent);
+        padding: 0 1rem 1rem 0;
+        text-align: left;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .archive-table thead th:last-child { padding-right: 0; }
+
+      .archive-table tbody tr {
+        border-bottom: 1px solid var(--border);
+        transition: background 0.15s;
+      }
+
+      .archive-table tbody tr:hover {
+        background: var(--accent-dim);
+      }
+
+      .archive-table tbody td {
+        padding: 1.1rem 1rem 1.1rem 0;
+        vertical-align: top;
+        font-size: 0.9rem;
+      }
+
+      .archive-table tbody td:last-child { padding-right: 0; }
+
+      .col-year {
+        color: var(--muted);
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+        width: 60px;
+      }
+
+      .col-name {
+        font-weight: 600;
+        color: var(--text);
+        min-width: 180px;
+      }
+
+      .col-desc {
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .col-tech {
+        white-space: nowrap;
+        min-width: 140px;
+      }
+
+      .col-tech span {
+        display: inline-block;
+        font-size: 0.75rem;
+        color: var(--accent);
+        background: var(--accent-dim);
+        border-radius: 4px;
+        padding: 0.15rem 0.5rem;
+        margin: 0.15rem 0.2rem 0.15rem 0;
+      }
+
+      .col-link a {
+        font-size: 0.85rem;
+        color: var(--muted);
+        transition: color 0.2s;
+        white-space: nowrap;
+      }
+
+      .col-link a:hover { color: var(--accent); }
+
+      @media (max-width: 768px) {
+        .archive-page {
+          padding: 2rem 1.5rem 4rem;
+        }
+
+        .col-desc { display: none; }
+
+        .archive-table thead th,
+        .archive-table tbody td {
+          padding-right: 0.75rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="archive-page">
+
+      <a href="index.html" class="archive-back">← Back to Main Page</a>
+
+      <div class="archive-header">
+        <h1>All Projects</h1>
+        <p>A running list of things I've built.</p>
+      </div>
+
+      <table class="archive-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Project</th>
+            <th>Description</th>
+            <th>Built With</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-year">2025</td>
+            <td class="col-name">NFL Quarterback Regression Model</td>
+            <td class="col-desc">Logistic regression classifier built from scratch to predict NFL outcomes using 80+ years of quarterback data.</td>
+            <td class="col-tech">
+              <span>Python</span>
+              <span>NumPy</span>
+              <span>Pandas</span>
+              <span>Plotly</span>
+            </td>
+            <td class="col-link"><a href="https://github.com/smallik1029/ds3000-project" target="_blank" rel="noopener">GitHub →</a></td>
+          </tr>
+          <tr>
+            <td class="col-year">2025</td>
+            <td class="col-name">VSN — Stock Analysis Platform</td>
+            <td class="col-desc">Web platform for analyzing financial time-series data with interactive visualizations and performance metrics.</td>
+            <td class="col-tech">
+              <span>JavaScript</span>
+              <span>HTML/CSS</span>
+              <span>Python</span>
+            </td>
+            <td class="col-link"><a href="https://vsnanalysis.com" target="_blank" rel="noopener">Live →</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </body>
+</html>
