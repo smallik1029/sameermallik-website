@@ -413,7 +413,7 @@ ul { list-style: none; }
 
 .edu-gpa {
   font-size: 0.875rem;
-  color: var(--accent);
+  color: var(--muted);
   font-weight: 500;
 }
 
