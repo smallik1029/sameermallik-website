@@ -355,9 +355,8 @@ ul { list-style: none; }
 
 .skill-tags span {
   font-size: 0.8rem;
-  color: var(--muted);
-  background: var(--surface);
-  border: 1px solid var(--border);
+  color: var(--accent);
+  background: var(--accent-dim);
   border-radius: 4px;
   padding: 0.25rem 0.65rem;
 }
