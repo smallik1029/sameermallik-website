@@ -486,9 +486,6 @@ footer {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(17, 24, 39, 0.95);
-    border-bottom: 1px solid var(--border);
-    backdrop-filter: blur(10px);
   }
 
   .nav-brand {
@@ -520,7 +517,9 @@ footer {
     position: absolute;
     top: var(--nav-h);
     left: 0; right: 0;
-    background: var(--surface);
+    background: rgba(13, 10, 10, 0.35);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(25px);
     border-bottom: 1px solid var(--border);
     flex-direction: column;
     padding: 1.5rem;
