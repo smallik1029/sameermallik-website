@@ -46,7 +46,7 @@ highlightNav();
   const MOUSE_RADIUS  = 200;   // px radius of cursor influence
   const MOUSE_FORCE   = 90;    // how far points get pushed
   const BASE_ALPHA    = 0.15;  // line opacity at rest
-  const GLOW_ALPHA    = 0.6;  // line opacity near cursor
+  const GLOW_ALPHA    = 0.6;   // line opacity near cursor
 
   let W, H, cols, rows, pts;
   let mouse = { x: -9999, y: -9999 };

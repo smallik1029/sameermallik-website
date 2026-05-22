@@ -520,7 +520,6 @@ footer {
     background: rgba(13, 10, 10, 0.35);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(25px);
-    border-bottom: 1px solid var(--border);
     flex-direction: column;
     padding: 1.5rem;
     gap: 1.25rem;
@@ -534,6 +533,12 @@ footer {
   .mobile-nav-links a {
     font-size: 0.9rem;
     color: var(--muted);
+  }
+
+  .mobile-nav:has(.mobile-nav-links.open) {
+    background: rgba(13, 10, 10, 0.35);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
   }
 
   .right-panel {
