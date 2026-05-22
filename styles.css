@@ -6,7 +6,7 @@
 }
 
 :root {
-  --bg:         #111827;
+  --bg:         #0d0a0a;
   --surface:    #1f2937;
   --border:     #374151;
   --text:       #f1f5f9;
@@ -315,6 +315,7 @@ ul { list-style: none; }
   font-weight: 500;
   color: var(--accent);
   background: var(--accent-dim);
+  backdrop-filter: blur(4px);
   border-radius: 4px;
   padding: 0.2rem 0.6rem;
 }
@@ -357,6 +358,7 @@ ul { list-style: none; }
   font-size: 0.8rem;
   color: var(--accent);
   background: var(--accent-dim);
+  backdrop-filter: blur(4px);
   border-radius: 4px;
   padding: 0.25rem 0.65rem;
 }
