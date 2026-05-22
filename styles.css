@@ -477,6 +477,10 @@ footer {
     display: none;
   }
 
+  #meshCanvas {
+    display: none;
+  }
+
   .mobile-nav {
     display: flex;
     align-items: center;
