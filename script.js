@@ -40,13 +40,13 @@ highlightNav();
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
 
-  const CELL          = 50;    // grid spacing in px
-  const WAVE_AMP      = 10;    // how much points drift
-  const WAVE_SPEED    = 0.0005;
+  const CELL          = 25;    // grid spacing in px
+  const WAVE_AMP      = 20;    // how much points drift
+  const WAVE_SPEED    = 0.001;
   const MOUSE_RADIUS  = 200;   // px radius of cursor influence
   const MOUSE_FORCE   = 90;    // how far points get pushed
-  const BASE_ALPHA    = 0.06;  // line opacity at rest
-  const GLOW_ALPHA    = 0.22;  // line opacity near cursor
+  const BASE_ALPHA    = 0.25;  // line opacity at rest
+  const GLOW_ALPHA    = 0.6;  // line opacity near cursor
 
   let W, H, cols, rows, pts;
   let mouse = { x: -9999, y: -9999 };
