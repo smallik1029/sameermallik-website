@@ -45,7 +45,7 @@ highlightNav();
   const WAVE_SPEED    = 0.001;
   const MOUSE_RADIUS  = 200;   // px radius of cursor influence
   const MOUSE_FORCE   = 90;    // how far points get pushed
-  const BASE_ALPHA    = 0.25;  // line opacity at rest
+  const BASE_ALPHA    = 0.15;  // line opacity at rest
   const GLOW_ALPHA    = 0.6;  // line opacity near cursor
 
   let W, H, cols, rows, pts;
