@@ -97,7 +97,7 @@ highlightNav();
     const my = (a.y + b.y) / 2;
     const d  = Math.hypot(mx - mouse.x, my - mouse.y);
     const glow = d < MOUSE_RADIUS ? (1 - d / MOUSE_RADIUS) : 0;
-    ctx.strokeStyle = `rgba(32,178,170,${BASE_ALPHA + glow * (GLOW_ALPHA - BASE_ALPHA)})`;
+    ctx.strokeStyle = `rgba(192,57,43,${BASE_ALPHA + glow * (GLOW_ALPHA - BASE_ALPHA)})`;
     ctx.beginPath();
     ctx.moveTo(a.x, a.y);
     ctx.lineTo(b.x, b.y);

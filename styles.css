@@ -11,8 +11,8 @@
   --border:     #374151;
   --text:       #f1f5f9;
   --muted:      #94a3b8;
-  --accent:     #20B2AA;
-  --accent-dim: rgba(32, 178, 170, 0.08);
+  --accent:     #C0392B;
+  --accent-dim: rgba(192, 57, 43, 0.08);
 
   --font:       'Inter', system-ui, -apple-system, sans-serif;
   --nav-h:      60px;
