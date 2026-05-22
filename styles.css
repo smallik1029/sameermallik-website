@@ -535,7 +535,7 @@ footer {
     color: var(--muted);
   }
 
-  .mobile-nav:has(.mobile-nav-links.open) {
+  .mobile-nav.open {
     background: rgba(13, 10, 10, 0.35);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);

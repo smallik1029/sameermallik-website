@@ -2,9 +2,15 @@
 const navToggle = document.getElementById('navToggle');
 const mobileNavLinks = document.getElementById('mobileNavLinks');
 if (navToggle) {
-  navToggle.addEventListener('click', () => mobileNavLinks.classList.toggle('open'));
+  navToggle.addEventListener('click', () => {
+    mobileNavLinks.classList.toggle('open');
+    document.getElementById('mobileNav').classList.toggle('open');
+  });
   mobileNavLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => mobileNavLinks.classList.remove('open'));
+    link.addEventListener('click', () => {
+      mobileNavLinks.classList.remove('open');
+      document.getElementById('mobileNav').classList.remove('open');
+    });
   });
 }
 
